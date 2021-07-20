@@ -40,7 +40,7 @@ int tdszCompress(int type, const char * input, const int nelements, const char *
 int tdszDecompress(int type, const char * input, int compressedSize, const int nelements, const char * output);
 
 //
-//  tdszExit
+//  Exit call
 //
 void tdszExit();
 
