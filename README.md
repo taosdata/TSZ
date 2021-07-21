@@ -2,6 +2,7 @@
 Error-bounded Lossy Data Compressor For Float Double 
 
 TSZ algorithm is come from SZ algorithm, Github url is  https://github.com/szcompressor .
+
 Bellow is aspect of improvement :
   1) Better speed and size.
      SZ head size about 24 bytes, we are reduced to 2 bytes.
