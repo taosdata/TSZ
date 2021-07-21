@@ -5,6 +5,7 @@ TSZ algorithm is come from SZ algorithm, Github url is  https://github.com/szcom
 
 Bellow is aspect of improvement :
   1) Better speed and size
+  
      SZ head size about 24 bytes, we are reduced to 2 bytes.
      we delete some no use code and some unnecessary function could be droped.
   2) Support multi-threads, interface is thread-safety.
