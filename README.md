@@ -13,5 +13,6 @@ Bellow is aspect of improvement :
   4) Remove int8 int16 int32 and other datatype, only float double be remained.
   5) Optimize code speed
   6) Other optimize...
+  
 After modify, TSZ become faster、smaller and independent.  TSZ more suitable for small block data compression.
 
