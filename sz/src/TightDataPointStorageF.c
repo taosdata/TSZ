@@ -357,6 +357,8 @@ void free_TightDataPointStorageF(TightDataPointStorageF *tdps)
 		free(tdps->exactMidBytes);
 	if(tdps->residualMidBits!=NULL)
 		free(tdps->residualMidBits);
+	if(tdps->typeArray)
+	    free(tdps->typeArray);
 	free(tdps);
 }
 
