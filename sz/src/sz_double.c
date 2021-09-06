@@ -270,6 +270,7 @@ size_t dataLength, double realPrecision, size_t *outSize, double valueRangeSize,
 void SZ_compress_args_double_withinRange(unsigned char* newByteData, double *oriData, size_t dataLength, size_t *outSize)
 {
 	TightDataPointStorageD* tdps = (TightDataPointStorageD*) malloc(sizeof(TightDataPointStorageD));
+	memset(tdps, 0, sizeof(TightDataPointStorageD));
 	tdps->leadNumArray = NULL;
 	tdps->residualMidBits = NULL;
 	

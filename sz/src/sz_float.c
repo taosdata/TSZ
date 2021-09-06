@@ -261,7 +261,6 @@ bool SZ_compress_args_float_NoCkRngeNoGzip_1D( unsigned char* newByteData, float
 	{
 		return false;
 	}	
-	
 	free_TightDataPointStorageF(tdps);
 	return true;
 }
@@ -270,6 +269,7 @@ bool SZ_compress_args_float_NoCkRngeNoGzip_1D( unsigned char* newByteData, float
 void SZ_compress_args_float_withinRange(unsigned char* newByteData, float *oriData, size_t dataLength, size_t *outSize)
 {
 	TightDataPointStorageF* tdps = (TightDataPointStorageF*) malloc(sizeof(TightDataPointStorageF));
+	memset(tdps, 0, sizeof(TightDataPointStorageF));
 	tdps->leadNumArray = NULL;
 	tdps->residualMidBits = NULL;
 	

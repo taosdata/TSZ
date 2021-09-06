@@ -166,6 +166,7 @@ void new_TightDataPointStorageF(TightDataPointStorageF **this,
 		unsigned char radExpo) {
 	
 	*this = (TightDataPointStorageF *)malloc(sizeof(TightDataPointStorageF));
+	memset(*this, 0, sizeof(TightDataPointStorageF));
 	(*this)->allSameData = 0;
 	(*this)->realPrecision = realPrecision;
 	(*this)->medianValue = medianValue;

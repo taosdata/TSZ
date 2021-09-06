@@ -168,6 +168,7 @@ void new_TightDataPointStorageD(TightDataPointStorageD **this,
 {
 	//int i = 0;
 	*this = (TightDataPointStorageD *)malloc(sizeof(TightDataPointStorageD));
+	memset(*this, 0, sizeof(TightDataPointStorageD));
 	(*this)->allSameData = 0;
 	(*this)->realPrecision = realPrecision;
 	(*this)->medianValue = medianValue;
